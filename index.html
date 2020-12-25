@@ -13216,7 +13216,7 @@ This folder is in the same directory as the python file running flask is in. Fla
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/htmlpage&quot;</span><span class="p">)</span>
@@ -13225,52 +13225,6 @@ This folder is in the same directory as the python file running flask is in. Fla
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">AssertionError</span>                            Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-7-344ce808cbee&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span><span class="ansi-yellow-intense-fg ansi-bold">@</span>app<span class="ansi-yellow-intense-fg ansi-bold">.</span>route<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#34;/htmlpage&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">      2</span> <span class="ansi-green-intense-fg ansi-bold">def</span> htmlpageDemo<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
-<span class="ansi-green-fg">      3</span>     <span class="ansi-green-intense-fg ansi-bold">return</span> render_template<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#34;index.html&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-
-<span class="ansi-green-intense-fg ansi-bold">c:\users\efrai\appdata\local\programs\python\python36\lib\site-packages\flask\app.py</span> in <span class="ansi-cyan-fg">decorator</span><span class="ansi-blue-intense-fg ansi-bold">(f)</span>
-<span class="ansi-green-fg">   1313</span>         <span class="ansi-green-intense-fg ansi-bold">def</span> decorator<span class="ansi-yellow-intense-fg ansi-bold">(</span>f<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
-<span class="ansi-green-fg">   1314</span>             endpoint <span class="ansi-yellow-intense-fg ansi-bold">=</span> options<span class="ansi-yellow-intense-fg ansi-bold">.</span>pop<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#34;endpoint&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-green-intense-fg ansi-bold">None</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1315</span><span class="ansi-yellow-intense-fg ansi-bold">             </span>self<span class="ansi-yellow-intense-fg ansi-bold">.</span>add_url_rule<span class="ansi-yellow-intense-fg ansi-bold">(</span>rule<span class="ansi-yellow-intense-fg ansi-bold">,</span> endpoint<span class="ansi-yellow-intense-fg ansi-bold">,</span> f<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-yellow-intense-fg ansi-bold">**</span>options<span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">   1316</span>             <span class="ansi-green-intense-fg ansi-bold">return</span> f
-<span class="ansi-green-fg">   1317</span> 
-
-<span class="ansi-green-intense-fg ansi-bold">c:\users\efrai\appdata\local\programs\python\python36\lib\site-packages\flask\app.py</span> in <span class="ansi-cyan-fg">wrapper_func</span><span class="ansi-blue-intense-fg ansi-bold">(self, *args, **kwargs)</span>
-<span class="ansi-green-fg">     96</span>                 <span class="ansi-blue-intense-fg ansi-bold">&#34;before the application starts serving requests.&#34;</span>
-<span class="ansi-green-fg">     97</span>             )
-<span class="ansi-green-intense-fg ansi-bold">---&gt; 98</span><span class="ansi-yellow-intense-fg ansi-bold">         </span><span class="ansi-green-intense-fg ansi-bold">return</span> f<span class="ansi-yellow-intense-fg ansi-bold">(</span>self<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-yellow-intense-fg ansi-bold">*</span>args<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-yellow-intense-fg ansi-bold">**</span>kwargs<span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">     99</span> 
-<span class="ansi-green-fg">    100</span>     <span class="ansi-green-intense-fg ansi-bold">return</span> update_wrapper<span class="ansi-yellow-intense-fg ansi-bold">(</span>wrapper_func<span class="ansi-yellow-intense-fg ansi-bold">,</span> f<span class="ansi-yellow-intense-fg ansi-bold">)</span>
-
-<span class="ansi-green-intense-fg ansi-bold">c:\users\efrai\appdata\local\programs\python\python36\lib\site-packages\flask\app.py</span> in <span class="ansi-cyan-fg">add_url_rule</span><span class="ansi-blue-intense-fg ansi-bold">(self, rule, endpoint, view_func, provide_automatic_options, **options)</span>
-<span class="ansi-green-fg">   1282</span>                 raise AssertionError(
-<span class="ansi-green-fg">   1283</span>                     <span class="ansi-blue-intense-fg ansi-bold">&#34;View function mapping is overwriting an &#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1284</span><span class="ansi-yellow-intense-fg ansi-bold">                     </span><span class="ansi-blue-intense-fg ansi-bold">&#34;existing endpoint function: %s&#34;</span> <span class="ansi-yellow-intense-fg ansi-bold">%</span> endpoint
-<span class="ansi-green-fg">   1285</span>                 )
-<span class="ansi-green-fg">   1286</span>             self<span class="ansi-yellow-intense-fg ansi-bold">.</span>view_functions<span class="ansi-yellow-intense-fg ansi-bold">[</span>endpoint<span class="ansi-yellow-intense-fg ansi-bold">]</span> <span class="ansi-yellow-intense-fg ansi-bold">=</span> view_func
-
-<span class="ansi-red-intense-fg ansi-bold">AssertionError</span>: View function mapping is overwriting an existing endpoint function: htmlpageDemo</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -13285,7 +13239,7 @@ This folder is in the same directory as the python file running flask is in. Fla
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">somepythonVar</span> <span class="o">=</span> <span class="mi">35</span>
